@@ -19,5 +19,10 @@ configure_file( src/config.h.in ${CMAKE_BINARY_DIR}/bin/config.h)
 include_directories( ${CMAKE_BINARY_DIR}/bin/ ) # Make sure it can be included...
 
 if (NOT TARGET bioparser)
-  add_subdirectory(3rdparty/bioparser EXCLUDE_FROM_ALL)
+  add_subdirectory(vendor/bioparser EXCLUDE_FROM_ALL)
 endif ()
+
+target_link_libraries(
+  stats 
+  bioparser
+)

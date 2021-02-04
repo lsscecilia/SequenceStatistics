@@ -1,17 +1,25 @@
 #include <iostream>
+#include <getopt.h>
+
 #include "bioparser/fastq_parser.hpp"
+
+#include "config.h"
 
 using namespace std; 
 
 struct Sequence {  // or any other name
- public:
+  string name; 
+  string data; 
+  string quality; 
+  public:
   Sequence(  // required arguments
-      const char*, std::uint32_t,
-      const char*, std::uint32_t,
-      const char*, std::uint32_t) {
-    // implementation
-  }
-}
+      const char* name, std::uint32_t name_len,
+      const char* data, std::uint32_t data_len ,
+      const char* quality, std::uint32_t quality_len) :
+        name(name, name_len), 
+        data(data, data_len), 
+        quality(data, quality_len){}
+}; 
 
 static struct option long_options[] = {
   /* These options don’t set a flag.
