@@ -1,5 +1,0 @@
-/home/cecilia/Desktop/SequenceStatistics/build/CMakeFiles/rebuild_cache.dir
-/home/cecilia/Desktop/SequenceStatistics/build/CMakeFiles/edit_cache.dir
-/home/cecilia/Desktop/SequenceStatistics/build/CMakeFiles/stats.dir
-/home/cecilia/Desktop/SequenceStatistics/build/vendor/bioparser/CMakeFiles/rebuild_cache.dir
-/home/cecilia/Desktop/SequenceStatistics/build/vendor/bioparser/CMakeFiles/edit_cache.dir
